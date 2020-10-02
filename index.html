@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>My Hometown Bike Trails</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+
+</head>
+
+<body>
+
+    <!---------- /.main header ---------->
+    <header class="main-header">
+        <h1 class="name"><a href="#">Louisville MTB</a></h1>
+        <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trail Maps</a></li>
+            <li><a href="#contactme">Contacts</a></li>
+        </ul>
+    </header>
+
+    <!---------- /.banner ---------->
+    <div class= "banner">
+        <img src="img/mtblogo.png" alt="Bike Logo" class="logo">
+        <h1 class="headline">Louiville Mountain Bike Trails</h1>
+    </div>
+
+    <div class="welcome">
+        <h2>Welcome!</h2>
+        <p>Hi! I am Joseph Abaya and I am here to tour you here in Louisville bike trails. 
+        Explore the beauty of our trails whether you are looking for an easy one or hard. 
+        Please invite your families and friends especially those kids to take them away a bit with their gadgets.</p>
+    </div>
+
+    <div class="row">
+        
+        <!-- /.primary  --> 
+        <div class="primary col">
+            <img class="silo-img" src="img/silo.png" alt="Silo Park">
+            <h2>Silo Center Bike Park</h2>
+            <h3>BIKE PARK HOURS: 10AM-SUNSET</h3>    
+                <p>There are beginners,intermidiate and hard trails here in Silo Bike Park that can be enjoy even by kids.</p>
+                <p>The trails are tag from <strong>difficult to most difficult.</strong> So make sure check it before riding it.</p>
+                <p>Test the easy trail first and once you are comfortable then hop to the difficult one.</p>
+                <p><ul><strong>Amenities:</strong></p></ul>
+                    <li>Water fountain</li>
+                    <li>Pump Track and basic bike repair tools</li>
+        </div>
+
+        <!-- /.secondary  -->
+        <div class="secondary col">
+            <img class="cherokee-img" src="img/cherokee.jpeg" alt="Cherokee/Seneca Park">
+            <h2>Cherokee/Seneca Park Trail/Loop-10.3 miles</h2>
+            <h3>PARK HOURS: 6AM-11PM</h3>
+                <p>It is #1 rank in MTB trail here in Louisville according to MTBproject and this trail is the closest to downtown.</p>
+                <p>This difficulty of this bike park are for <strong>intermidiate to difficult</strong> riders who enjoy technical trails.</p>
+                <p>Ride this loop counter-clockwise for the best ride experience.</p>
+                <p><ul><strong>Amenities:</strong></p></ul>
+                    <li>Bring your own equipment and water</li>
+        </div>
+
+        <!-- /.tertiary -->
+        <div class="tertiary col">
+            <img class="waverly-img" src="img/waverly.jpeg" alt="Waverly Park">
+            <h2>Waverly Park Loop-7.5 miles</h2>
+            <h3>PARK HOURS: 6AM-11PM</h3>
+                <p>This is a VERY fast singletrack trail for <strong>intermidiate</strong> riders.</p>
+                <p>It has fair share of climbing and descending, which will be a great workout.</p>
+                <p>A good rider etiquette is a must, let a rider pass if you hear the word "Passing!".</p>
+                <p><ul><strong>Amenities:</strong></p></ul>
+                    <li>Bring your own equipment and water</li>
+        </div>
+    </div>
+
+    <div class="googlemaps">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1FQ15XK7V126NabzK-g0ELzJ0MgJ1TwYo"></iframe>
+    </div>
+
+    <div class="container">
+
+        <div class="contacts" id="contactme">
+            <h2>Contacts</h2>
+            <p><strong>Email:</strong>mountainbike@gmail.com</p>
+            <p><strong>Phone:</strong>502-888-8888</p>
+            <p><strong>Address:</strong></p>
+            <address>
+                Louisville MTB<br>
+                8888 Bicycle Way<br>
+                Louisville, KY 40288
+            </address>
+        </div>
+        
+        <div class="email">
+            <form action="index.html" method="post" class="email">
+
+                <h2>Inquiry:</h2>
+                <p>Feel free to ask some questions. I will do my best to reply on your inquires as fast as I can.</p>
+
+                <fieldset>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="user_message"></textarea>
+
+                    <button type="button">Submit</button>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <span>&copy;2020 Louisville Mountain Bike Tour</span>
+    </footer>
+</body>
+    
+</html>

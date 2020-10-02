@@ -1,0 +1,58 @@
+/* Media Queries*/
+
+@media screen and (max-width: 769px) {
+    .name {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+        padding: 1em .5em;
+        margin: auto;
+    }
+
+    h1.headline {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (min-width: 769px) {
+    
+    .main-header,
+    .main-nav,
+    .row {
+        display: flex;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+    
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col {
+        flex: 1 50%;
+    }
+
+    .container {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .col {
+        flex-basis: 0;
+    }
+    
+}
