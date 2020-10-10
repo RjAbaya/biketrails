@@ -84,7 +84,7 @@ h1.headline {
 }
 
 .contacts,
-.email {
+#myForm {
     margin: 10px 5px;
     padding: 10px 20px;
     background: #fff;
