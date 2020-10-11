@@ -1,9 +1,6 @@
 /* Media Queries*/
 
 @media screen and (max-width: 769px) {
-    .name {
-        display: none;
-    }
 
     .main-nav {
         display: flex;
