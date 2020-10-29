@@ -16,7 +16,7 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(19, 98, 148);
+    color: rgb(101, 178, 223);
 }
 
 a:hover {
@@ -99,8 +99,8 @@ h1.headline {
 }
 
 .googlemaps iframe {
-    width: 28em;
-    height: 20em;
+    width: 80%;
+    height: 30em;
 }
 
 .main-footer {
@@ -110,25 +110,42 @@ h1.headline {
     text-align: center;
 }
 
+.container {
+    justify-content: center;
+}
+
+.inquiry {
+    background-color: #e8eeef;
+    width: 40em;
+}
+
 input[type="text"],
-input[type="email"],
 textarea {
-    background: rgba(255,255,255,0.1);
+    background: rgba(179, 176, 176, 0.3);
     border: none;
     font-size: 16px;
     height: auto;
     margin: 0;
     outline: 0;
     padding: 15px;
-    width: 100%;
-    background-color: #e8eeef;
+    width: 100%; 
     color: black;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 20px;
 }
 
-.container {
-    justify-content: center;
+textarea {
+    resize: vertical;
+    height: 5em;
+}
+
+#errorName, #errorEmail, #errorMessage {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1em;
+    transition: all 0.5s ease;
+    color: red;
 }
 
 li,
@@ -224,10 +241,6 @@ button {
         width: 100%;
     }
 
-    .googlemaps iframe {
-        width: 50em;
-        height: 30em;
-    }
 
     h2 {
         font-size: 20px;
@@ -249,5 +262,14 @@ button {
 
     .row {
         width: 90%;
+    }
+
+    .banner { 
+        height: 750px;
+        width: 100%;
+    }
+
+    .googlemaps iframe {
+        height: 45em;
     }
 }
