@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/flexbox.css">
 
 </head>
 
@@ -19,119 +18,152 @@
 
     <!---------- /.main header ---------->
 
-    <header class="main-header">
-        <h1 class="name"><a href="#">Louisville MTB</a></h1>
-        <ul class="main-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#maps">Trail Maps</a></li>
-            <li><a href="#contactme">Contacts</a></li>
-        </ul>
+    <header class="container">
+        <div class="logo"> 
+            <img src="img/logo.png" id="mtblogo" alt="Louisville website logo" class="mtblogo">
+        </div>
+        
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#myForm">Contacts</a></li>
+                <li class="highlight"><a href="trails.html">Explore our Trails!</a></li>
+                
+            </ul>
+        </nav>
     </header>
 
-    <!---------- /.banner ---------->
-    <div class= "banner">
-        <img src="img/mtblogo.png" alt="Bike Logo" class="logo">
-        <h1 class="headline">Louiville Mountain Bike Trails</h1>
-    </div>
+    <!------- /. main container ------>
+    
+    <main class="container">
+        <section class="welcome container">
+            <h1>Welcome to Louisville Mountain Bike Trails!</h1>
+            <p>There are different MTB trails here in Louisville and they are close to the city.
+                These trails are for kids and adults, and we have variety of fast, technical and jump trails.
+                Come and lets <strong><a href="trails.html" class="explore">explore</a></strong> it!
+            </p>
+        </section>
 
-    <div class="welcome">
-        <h2>Welcome!</h2>
-        <p>Hi! I am Joseph Abaya and I am here to tour you here in Louisville bike trails. 
-        Explore the beauty of our trails whether you are looking for an easy one or hard. 
-        Please invite your families and friends especially those kids to take them away a bit with their gadgets.</p>
-    </div>
+    
+        <div class="slideshow">
+            <figure>
+                <img class="mySlides" src="img/img1.jpg" style="width:100%">
+                <img class="mySlides" src="img/img2.jpg" style="width:100%">
+                <img class="mySlides" src="img/img3.jpg" style="width:100%">
+                <img class="mySlides" src="img/img4.jpg" style="width:100%">
 
-    <div class="row">
+                <button class="leftbutton" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="rightbutton" onclick="plusDivs(1)">&#10095;</button>
+            </figure>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-inner">
+            <span>&copy;2020 Louisville Mountain Bike Tour</span>
+        </div>
+    </footer>
+</body>
+    
+</html>
+
+    <!-- <div class="container"> -->
         
-        <!-- /.primary  --> 
-        <div class="primary col">
-            <img class="silo-img" src="img/silo.png" alt="Silo Park">
-            <h2>Silo Center Bike Park</h2>
-            <h3>BIKE PARK HOURS: 10AM-SUNSET</h3>    
+        <!-- /.first row  --> 
+        <!-- <div class="card">
+            <div class="imgBx">
+                <img src="img/silo.png" class="picture">
+            </div>
+            <div class="content">
+                <h2>Silo Center Bike Park</h2>
+                <h3>BIKE PARK HOURS: 10AM-SUNSET</h3>    
                 <p>There are beginners,intermediate and hard trails here in Silo Bike Park that can be enjoy even by kids.</p>
-                <p>The trails are tag from <strong>difficult to most difficult.</strong> So make sure check it before riding it.</p>
+                <p>The trails are tag from <strong>easy to most difficult.</strong> So make sure check it before riding it.</p>
                 <p>Test the easy trail first and once you are comfortable then hop to the difficult one.</p>
-                <p><ul><strong>Amenities:</strong></p></ul>
+                <ul><strong>Amenities:</strong></ul>
                     <li>Water fountain</li>
                     <li>Pump Track and basic bike repair tools</li>
-        </div>
+            </div>
+        </div> -->
 
-        <!-- /.secondary  -->
-        <div class="secondary col">
-            <img class="cherokee-img" src="img/cherokee.jpeg" alt="Cherokee/Seneca Park">
-            <h2>Cherokee/Seneca Park Trail/Loop-10.3 miles</h2>
-            <h3>PARK HOURS: 6AM-11PM</h3>
-                <p>It is #1 rank in MTB trail here in Louisville according to MTBproject and this trail is the closest to downtown.</p>
-                <p>This difficulty of this bike park are for <strong>intermediate to difficult</strong> riders who enjoy technical trails.</p>
-                <p>Ride this loop counter-clockwise for the best ride experience.</p>
-                <p><ul><strong>Amenities:</strong></p></ul>
-                    <li>Bring your own equipment and water</li>
-        </div>
+        <!-- /.second row  -->
+        <!-- <div class="card">
+            <div class="imgBx">
+                <img src="img/cherokee.jpeg" class="picture">
+            </div>
+            <div class="content">
+                <h2>Cherokee/Seneca Park Trail/Loop-10.3 miles</h2>
+                <h3>PARK HOURS: 6AM-11PM</h3>
+                    <p>It is #1 rank in MTB trail here in Louisville according to MTBproject and this trail is the closest to downtown.</p>
+                    <p>This difficulty of this bike trail are for riders <strong>intermediate and above</strong> who enjoy technical trails.</p>
+                    <p>Ride this loop counter-clockwise for the best ride experience.</p>
+                    <ul><strong>Amenities:</strong></ul>
+                        <li>Bring your own equipment and water</li>
+            </div>   
+        </div> -->
 
-        <!-- /.tertiary -->
-        <div class="tertiary col">
-            <img class="waverly-img" src="img/waverly.jpeg" alt="Waverly Park">
-            <h2>Waverly Park Loop-7.5 miles</h2>
-            <h3>PARK HOURS: 6AM-11PM</h3>
-                <p>This is a VERY fast singletrack trail for <strong>intermediate</strong> riders.</p>
-                <p>It has fair share of climbing and descending, which will be a great workout.</p>
-                <p>A good rider etiquette is a must, let a rider pass if you hear the word "Passing!".</p>
-                <p><ul><strong>Amenities:</strong></p></ul>
-                    <li>Bring your own equipment and water</li>
+        <!-- /.third row -->
+        <!-- <div class="card">
+            <div class="imgBx">
+                <img src="img/waverly.jpeg" class="picture">
+            </div>
+            <div class="content">
+                <h2>Waverly Park Loop-7.5 miles</h2>
+                <h3>PARK HOURS: 6AM-11PM</h3>
+                    <p>This is a VERY fast singletrack trail for <strong>intermediate</strong> riders.</p>
+                    <p>It has fair share of climbing and descending, which will be a great workout.</p>
+                    <p>A good rider etiquette is a must, let a rider pass if you hear the word "Passing!".</p>
+                    <ul><strong>Amenities:</strong></ul>
+                        <li>Bring your own equipment and water</li>
+            </div>
+        </div> -->
+
+        <!-- /.fourth row -->
+        <!-- <div class="card">
+            <div class="imgBx">
+                <img src="img/fort.jpeg" class="picture">
+            </div>
+            <div class="content">
+                <h2>Fort Duffield Trail-5.3 miles</h2>
+                <h3>PARK HOURS: 8AM-5PM</h3>
+                    <p>This is for riders who are <strong>intermediate and advance</strong> who enjoy technical rides.</p>
+                    <p>There are dedicated freeride and dirt jump trails despite of being a short trail.</p>
+                    <p>While you are here enjoy the view of the park. This was a Union American Civil War fort protecting the Ohio River.</p>
+                    <ul><strong>Amenities:</strong></ul>
+                        <li>Bring your own equipment and water</li>
+            </div>
         </div>
     </div>
 
     <div class="googlemaps" id="maps">
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1FQ15XK7V126NabzK-g0ELzJ0MgJ1TwYo"></iframe>
     </div>
-
-    <div class="container">
-
-        <div class="contacts" id="contactme">
-            <h2>Contacts</h2>
-            <p><strong>Email:</strong>mountainbike@gmail.com</p>
-            <p><strong>Phone:</strong>502-888-8888</p>
-            <p><strong>Address:</strong></p>
-            <address>
-                Louisville MTB<br>
-                8888 Bicycle Way<br>
-                Louisville, KY 40288
-            </address>
-        </div>
         
-        <div class="inquiry">
-
-            <form id="myForm">
-                <h2>Questions or Suggestions:</h2>
-                
-                    <div id="errorName"></div>
-                    <label for="name">Name:</label>
+        <div id="myForm">
+            <h3>Get in Touch</h3>
+            <p>Comment below if you have questions about the trails here in Louisville and I will answer it as soon as I can.</br>
+               Thank you for visiting my website!
+            </p>
+            <div id="errorName" class="hidden">Enter a valid name!</div>
+                <label for="name">Name:</label>
                     <div class="input_field">
                         <input type="text" id="name" name="user_name">
                     </div>
                      
-                    <div id="errorEmail"></div>
-                    <label for="email">Email:</label>
+            <div id="errorEmail" class="hidden">Enter a valid email!</div>
+                <label for="email">Email:</label>
                     <div class="input_field">
                         <input type="text" id="email" name="user_email">
                     </div>
 
-                    <div id="errorMessage"></div>
-                    <label for="message">Message:</label>
+            <div id="errorMessage" class="hidden">Tell me more!</div>
+                <label for="message">Message:</label>
                     <div class="input_field">
                         <textarea id="message" name="user_message"></textarea>
                     </div>
-                    <button type="submit" id="submitbtn">SEND</button>
-     
-            </form>
+                    
+            <button type="submit" id="submitbtn" onclick="formSend()">SEND</button>
+        
+        </div> -->
 
-            <div id="output"></div>
-        </div>
-    </div>
-
-    <footer class="main-footer">
-        <span>&copy;2020 Louisville Mountain Bike Tour</span>
-    </footer>
-</body>
-    
-</html>
+   

@@ -1,44 +1,93 @@
-const submitBtn = document.getElementById('submitbtn');
+function formSend() {
+    //alert("TEsting");
 
     const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value.indexOf('@');
+    const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
-    const form = document.getElementById('myForm');
 
-    const errorName = document.getElementById('errorName');
-    const errorEmail = document.getElementById('errorEmail');
-    const errorMessage = document.getElementById('errorMessage');
+    const errorFound = false;
 
-form.addEventListener('submit', (e) => 
-{
-    
-    let text = []
-
-    if ( name === "" )
+    if (name == "") // Checking the name condition
     {
-        text.push('Provide a valid name')
-        errorName.innerText = text;
+        //Leaving the name area blank will be an error
+
+        var el = document.getElementById("errorName");
+        el.classList.remove("hidden");
+        errorFound = true;
+    }
+    else{
+        var el = document.getElementById("errorName");
+        el.classList.add("hidden");
     }
 
-    if ( email === "" || email == -1 )
+    if ( email === "" || email.indexOf("@") ==-1 ) // Checking the email condition
     {
-        text.push('Email must be valid')
-        errorEmail.innerText = text;
-    }
+        // Leaving the email area will be an error
+        // No '@' in the email will be an error
 
-    if (message === "" || message.length <= 10)
-    {
-        text.push('Tell me more!')
-        errorMessage.innerText = text;
+        var el = document.getElementById("errorEmail");
+        el.classList.remove("hidden");
+        errorFound = true;
     }
+    else{
 
+        var el = document.getElementById("errorEmail");
+        el.classList.add("hidden");
         
-    if (text.length > 0 ) {
-        e.preventDefault();
     }
-             
 
-})
+    if ( message === "" || message.length <= 10 ) // Checking the message condition
+    {
+        // Less than or equal to 10 characters will be an error
+
+        var el = document.getElementById("errorMessage");
+        el.classList.remove("hidden");
+        errorFound = true;
+
+    }
+    else
+    {
+        var el = document.getElementById("errorMessage");
+        el.classList.add("hidden");
+    }
+
+    if(errorFound == true) // If error found an alert will pop out
+    {
+        alert("ErrorFound");    
+    }
+    else
+    {
+        // If condition is successful, it will be console.
+
+        console.log(name);
+        console.log(email);
+        console.log(message);
+        console.log("Form Submitted");
+    }
+    
+}// End of the form validation
+
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+
 
 
 
