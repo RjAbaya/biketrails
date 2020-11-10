@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     color: white;   
     background: url("../img/specialized.jpeg");
     height: auto;
@@ -73,20 +73,20 @@ main {
 
 .welcome p {
     font-size: 1.2em;
-    font-weight: 600;
     max-width: 500px;
     line-height: 1.8em;
     margin: 3em auto;
 }
 
+form h2,
 .trailwords h2 {
     font-size: 1.8em;
 }
 
 .trailwords p,
 .trailwords li {
-    font-size: 1em;
-    font-weight: 600;
+    font-size: 1.2em;
+    margin: auto;
 }
 
 .trailwords li {
@@ -118,7 +118,31 @@ img {
     padding-top: 2em;
 }
 
+form{
+    flex-grow: 1;
+    max-width: 300px;
+    margin: 10px auto;
+}
 
+main.form.container {
+    max-width: 400px;
+    flex-flow: column;
+    display: flex;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-size: 16px;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+textarea {
+    resize: vertical;
+}
 
 @media screen and (min-width: 769px) {
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>My Hometown Bike Trails</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!---------- /.JS link ---------->
+
+    <script src="js/contacts.js" async defer></script>
+
+    <header class="container">
+        <div class="logo"> 
+            <img src="img/logo.png" id="mtblogo" alt="Louisville website logo" class="mtblogo">
+        </div>
+        
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li class="highlight"><a href="trails.html">Explore our Trails!</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form container">
+        <form id="myForm" onsubmit="mySubmitFunction(event)">
+            <h2>Let's get in Touch</h2>
+                <p>Comment below if you have questions about the trails here in Louisville and I will answer it as soon as I can.</br>
+                Thank you for visiting my website!
+                </p>
+                <div>
+                    <label for="name">Name:</label>
+                        <input type="text" id="name" required placeholder="Jane Doe">
+                </div>    
+                <div>
+                    <label for="email">Email:</label>
+                        <input type="email" id="email" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required placeholder="email@domain.com">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                        <textarea id="message" name="user_message" placeholder="What do you like to know?"></textarea>
+                </div>
+                    
+                <input type="submit"></input>
+        </form>
+    <main>
+
+
+    <div id="messageSent"></div>
+
+    <footer class="main-footer">
+        <div class="footer-inner">
+            <span>&copy;2020 Louisville Mountain Bike Tour</span>
+        </div>
+    </footer>
+</body>
