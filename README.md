@@ -1,5 +1,6 @@
-# biketrails
-This is a project of bike trails in Louisville, KY.
+# Louisville Bike Trails
+This is an individual current project that I am working that we need to submit in our school.
+The website project is about different mountain bike trails here in Louisville.
 The technologies that I used are the ff.
 
 Front End:
