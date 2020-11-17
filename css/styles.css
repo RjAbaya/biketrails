@@ -124,10 +124,16 @@ form{
     margin: 10px auto;
 }
 
+#messageSent,
 main.form.container {
     max-width: 400px;
     flex-flow: column;
     display: flex;
+    padding-bottom: 8em;
+}
+
+#messageSent {
+    font-size: 2em;
 }
 
 input[type="text"],

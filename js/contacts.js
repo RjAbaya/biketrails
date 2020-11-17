@@ -7,14 +7,12 @@ const form = document.getElementById('myForm')
     email.addEventListener('input', function (event) {
         if ( email.validity.valueMissing || email.validity.patternMismatch ) {    // Checking the email condition
             email.setCustomValidity('Please enter a valid email account in the format of email@domain.com')
-        } else {
-            email.setCumtomValidity('')
         }
     })
 
     
     function mySubmitFunction(event) {
     event.preventDefault()
-    messageSent.innertext = "I will get in touch with your email " + email.value + "and thank you!"
+    messageSent.innerText = "I will get in touch with your email " + email.value + " and thank you!"
     form.style.display = "none"
 }
