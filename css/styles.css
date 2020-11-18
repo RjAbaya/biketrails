@@ -1,4 +1,10 @@
+
+/* -------- Font Style -------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+/* -------- Body Style -------- */
 
 body {
     font-family: 'Varela Round', sans-serif;
@@ -150,7 +156,10 @@ textarea {
     resize: vertical;
 }
 
-@media screen and (min-width: 769px) {
+
+/* -------- Media Screen -------- */
+
+@media screen and (min-width: 769px) { 
 
     body {
         align-items: center;
